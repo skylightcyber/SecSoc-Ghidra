@@ -1,0 +1,2 @@
+# SecSoc-Ghidra
+Presentation materials.
