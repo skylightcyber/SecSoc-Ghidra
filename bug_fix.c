@@ -4,9 +4,6 @@
 
 #define NAME_MAX_LEN 10
 
-void safestrcpy(char * dest, char * src) {
-}
-
 int main() {
 
     char name[NAME_MAX_LEN] = {0};
@@ -20,7 +17,7 @@ int main() {
 
     /* This is DEFINITELY the only way to do this! */
     int i = 0;
-    while(i<NAME_MAX_LEN) {
+    while(i<NAME_MAX_LEN - 1 || temp_buff[i] == '\0' ) {
         name[i] = temp_buff[i];
         i++;
     }

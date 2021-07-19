@@ -55,5 +55,7 @@ int main() {
         ret = 1;
     }
 
+    free(password);
+    password = NULL;
     return ret;
 }
